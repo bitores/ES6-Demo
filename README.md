@@ -14,7 +14,8 @@
   import test from './test.js';
 ```
 
-##demo01
+
+###demo01
 ```
 let fruits = [
   {id: 100, name: '草莓'},
@@ -27,6 +28,7 @@ for (let fruit of fruits) {
 }
 console.log(`List total: ${fruits.length}`);
 ```
+
 
 **报错：Uncaught SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode**
 
