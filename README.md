@@ -46,18 +46,19 @@ function* a(){
 ```
 
 
-** 报错：Uncaught ReferenceError: regeneratorRuntime is not defined **
+**报错：Uncaught ReferenceError: regeneratorRuntime is not defined**
 
 
 >
 + As documented in the caveats, generators use require the 6to5 polyfill or the regenerator runtime
 + Generators a supported by default by chrome ( 45.0.2454.93 (64-bit)). It still doesn't work.
 
-> **方案：**
+**方案：**
 
 >
-+ ** npm install --save-dev babel-polyfill; **
-+ ** 在对应文件中 import 'babel-polyfill'; **
+
+** npm install --save-dev babel-polyfill; **
+** 在对应文件中 import 'babel-polyfill'; **
 
 
 ####set
