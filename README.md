@@ -31,7 +31,7 @@ console.log(`List total: ${fruits.length}`);
 ```
 
 
-** 报错：Uncaught SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode **
+**报错：Uncaught SyntaxError: Block-scoped declarations (let, const, function, class) not yet supported outside strict mode**
 
 >在文件第一行加　"use strict";
 
