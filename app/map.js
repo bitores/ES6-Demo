@@ -18,3 +18,7 @@
 
 // 键不存在时返回的默认值，类似 Python 中的collections.defaultdict。
 // 一个可以叫Map.fromObject(obj)的辅助函数，以便更方便地用构造对象的语法来写出一个Map。
+// Weak Maps
+// var wm = new WeakMap();
+// wm.set(s, { extra: 42 });
+// wm.size === undefined

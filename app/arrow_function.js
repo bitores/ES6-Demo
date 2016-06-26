@@ -23,13 +23,23 @@ var log = () => {
 }
 // 参数 1个
 var single = a => a
-// 参数 1+个
-var add = (a, b) => {
-    if (typeof a == 'number' && typeof b == 'number') {
-        return a + b
-    } else {
-        return 0
-    }
+// 不定参数
+var add = (...x) => {
+    x.reduce((m,n)=>m+n);
+}
+// 拓展参数 - 要求接收多个参数，但传入一个，自动分解
+var fu = (p1,p2,p3) => {
+    console.log(`Hello ${p1} ${p2} ${p3}`);
+}
+var people=['Wayou','John','Shaerlock'];
+//但是我们将一个数组以拓展参数的形式传递，它能很好地映射到每个单独的参数
+fu(...people);
+//而在以前，如果需要传递数组当参数，我们需要使用函数的apply方法
+fu.apply(null,people);//输出：Hello Wayou,John,Sherlock 
+
+// 参数有默认值
+var sayHello = (name='dude') =>{
+    console.log(`Hello ${name}`);
 }
 
 // ------------------返回值
@@ -44,3 +54,6 @@ var getHash = arr => {
         age: 33
     })
 }
+
+// 函数体的中花括号有无：简单的，函数体可以没有
+(a) => console.log(a);

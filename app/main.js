@@ -10,6 +10,13 @@ import ColorPoint from './subclass.js';
 
 import * as n from './arrow_function.js';
 
-import * as ge from './generators.js';
+import * as mapp from './map.js';
+import * as setp from './set.js';
+import * as newapi from './newapi.js';
 
 import * as sy from './symbols.js';
+import * as p from './promises.js';
+
+import * as s from './iterator.js';
+import * as pro from './proxy.js';
+import * as ge from './generators.js';
